@@ -1,6 +1,6 @@
 // Função para obter a escolha do computador
 function getComputerChoice() {
-    const choices = ['rock', 'paper', 'scissors'];
+    const choices = ['pedra', 'papel', 'tesoura'];
     return choices[Math.floor(Math.random() * 3)];
   }
   
@@ -9,9 +9,9 @@ function getComputerChoice() {
     if (playerChoice === computerChoice) {
       return "Empate!";
     } else if (
-      (playerChoice === 'rock' && computerChoice === 'scissors') ||
-      (playerChoice === 'paper' && computerChoice === 'rock') ||
-      (playerChoice === 'scissors' && computerChoice === 'paper')
+      (playerChoice === 'pedra' && computerChoice === 'tesoura') ||
+      (playerChoice === 'papel' && computerChoice === 'pedra') ||
+      (playerChoice === 'tesoura' && computerChoice === 'papel')
     ) {
       return "Você ganhou!";
     } else {
@@ -20,20 +20,20 @@ function getComputerChoice() {
   }
   
   // Adicionar event listeners aos botões
-  document.getElementById('rock').addEventListener('click', () => {
+  document.getElementById('pedra').addEventListener('click', () => {
     const computerChoice = getComputerChoice();
-    const result = determineWinner('rock', computerChoice);
+    const result = determineWinner('pedra', computerChoice);
     document.getElementById('result').textContent = `Você escolheu Pedra. O computador escolheu ${computerChoice}. ${result}`;
   });
   
-  document.getElementById('paper').addEventListener('click', () => {
+  document.getElementById('papel').addEventListener('click', () => {
     const computerChoice = getComputerChoice();
-    const result = determineWinner('paper', computerChoice);
+    const result = determineWinner('papel', computerChoice);
     document.getElementById('result').textContent = `Você escolheu Papel. O computador escolheu ${computerChoice}. ${result}`;
   });
   
-  document.getElementById('scissors').addEventListener('click', () => {
+  document.getElementById('tesoura').addEventListener('click', () => {
     const computerChoice = getComputerChoice();
-    const result = determineWinner('scissors', computerChoice);
+    const result = determineWinner('tesoura', computerChoice);
     document.getElementById('result').textContent = `Você escolheu Tesoura. O computador escolheu ${computerChoice}. ${result}`;
   });
