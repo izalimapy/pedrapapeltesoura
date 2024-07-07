@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #0ce7e7;
+  }
+  
+  h1 {
+    margin-top: 50px;
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #eaf552;
+    color: rgb(243, 6, 6);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #4202b9;
+  }
+  
+  #result {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px; /* Altere este valor para o tamanho desejado */
+    height: auto; /* Isso irá ajustar a altura automaticamente */
+    background-color: #f16cc5;
+    border: 1px solid #0886ee;
+    border-radius: 10px;
+    padding: 20px;
+  }
